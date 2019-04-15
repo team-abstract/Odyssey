@@ -9,15 +9,15 @@ CREATE TABLE users (
 
 CREATE TABLE librarians (
     librarianID int primary key,
-    userID int FOREIGN KEY REFERENCES users(id),
+    userID int REFERENCES users(id),
     accessLevel char(10)
 );
 
 CREATE TABLE cardOwners (
     cardOwnerID int primary key,
-    userID int FOREIGN KEY REFERENCES users(id),
+    userID int REFERENCES users(id),
     checkedBooks varray(5),
-    itemOnHoldID int FOREIGN KEY REFERENCES items(bibnum),
+    itemOnHoldID int REFERENCES items(bibnum),
     outstandingFees int,
     isSuspended boolean
 );
