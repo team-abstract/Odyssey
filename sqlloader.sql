@@ -20,7 +20,7 @@ CREATE TABLE items (
     isbn char(240),
     publicationYear int,
     publisher char(240),
-    itemType varchar(6),
+    itemType varchar(7),
     genre char(240),
     itemLocation char(240),
     numCount int,
