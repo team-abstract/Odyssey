@@ -13,15 +13,6 @@ CREATE TABLE librarians (
     accessLevel char(10)
 );
 
-CREATE TABLE cardOwners (
-    cardOwnerID int primary key,
-    userID int REFERENCES users(id),
-    checkedBooks varchar(100),
-    itemOnHoldID int REFERENCES items(bibnum),
-    outstandingFees int,
-    isSuspended char
-);
-
 CREATE TABLE items (
     bibnum int primary key,
     title char(240),
@@ -34,4 +25,13 @@ CREATE TABLE items (
     itemLocation char(240),
     numCount int,
     itemStatus char
+);
+
+CREATE TABLE cardOwners (
+    cardOwnerID int primary key,
+    userID int REFERENCES users(id),
+    checkedBooks varchar(100),
+    itemOnHoldID int REFERENCES items(bibnum),
+    outstandingFees int,
+    isSuspended char
 );
