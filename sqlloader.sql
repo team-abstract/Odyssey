@@ -1,28 +1,28 @@
-CREATE TABLE users {
+CREATE TABLE users (
     id int primary key,
     firstName char(100),
     lastName char(100),
     phoneNum int,
     email char(100),
     userRole char(11)
-};
+);
 
-CREATE TABLE librarians {
+CREATE TABLE librarians (
     librarianID int primary key,
     userID int FOREIGN KEY REFERENCES users(id),
     accessLevel char(10)
-};
+);
 
-CREATE TABLE cardOwners {
+CREATE TABLE cardOwners (
     cardOwnerID int primary key,
     userID int FOREIGN KEY REFERENCES users(id),
     checkedBooks varray(5),
     itemOnHoldID int FOREIGN KEY REFERENCES items(bibnum),
     outstandingFees int,
     isSuspended boolean
-};
+);
 
-CREATE TABLE items {
+CREATE TABLE items (
     bibnum char(100) primary key,
     title char(240),
     author char(240),
@@ -34,4 +34,4 @@ CREATE TABLE items {
     itemLocation char(240),
     numCount int,
     itemStatus char
-};
+);
