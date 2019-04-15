@@ -16,14 +16,14 @@ CREATE TABLE librarians (
 CREATE TABLE cardOwners (
     cardOwnerID int primary key,
     userID int REFERENCES users(id),
-    checkedBooks varray(5),
+    checkedBooks varchar(100),
     itemOnHoldID int REFERENCES items(bibnum),
     outstandingFees int,
-    isSuspended boolean
+    isSuspended char
 );
 
 CREATE TABLE items (
-    bibnum char(100) primary key,
+    bibnum int primary key,
     title char(240),
     author char(240),
     isbn char(240),
