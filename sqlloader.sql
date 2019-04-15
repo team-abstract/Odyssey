@@ -9,7 +9,8 @@ CREATE TABLE users (
 
 CREATE TABLE librarians (
     librarianID int primary key,
-    userID int FOREIGN KEY REFERENCES users(id),
+    userID int;
+    FOREIGN KEY (userID) REFERENCES users(id),
     accessLevel char(10)
 );
 
