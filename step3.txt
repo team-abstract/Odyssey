@@ -1,0 +1,58 @@
+SQL> @sqlloader.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> describe users;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(38)
+ FIRSTNAME                                          CHAR(100)
+ LASTNAME                                           CHAR(100)
+ PHONENUM                                           NUMBER(38)
+ EMAIL                                              CHAR(100)
+ USERROLE                                           CHAR(11)
+
+SQL> describe cardOwners;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CARDOWNERID                               NOT NULL NUMBER(38)
+ USERID                                             NUMBER(38)
+ CHECKEDBOOKS                                       VARCHAR2(100)
+ ITEMONHOLDID                                       NUMBER(38)
+ OUTSTANDINGFEES                                    NUMBER(38)
+ ISSUSPENDED                                        CHAR(1)
+
+SQL> describe librarians;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ LIBRARIANID                               NOT NULL NUMBER(38)
+ USERID                                             NUMBER(38)
+ ACCESSLEVEL                                        CHAR(10)
+
+SQL> describe items;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BIBNUM                                    NOT NULL NUMBER(38)
+ TITLE                                              CHAR(500)
+ AUTHOR                                             CHAR(240)
+ ISBN                                               CHAR(240)
+ PUBLICATIONYEAR                                    NUMBER(38)
+ PUBLISHER                                          CHAR(240)
+ ITEMTYPE                                           VARCHAR2(7)
+ GENRE                                              CHAR(240)
+ ITEMLOCATION                                       CHAR(240)
+ NUMCOUNT                                           NUMBER(38)
+ ITEMSTATUS                                         CHAR(1)
+
+SQL> !sqlldr control=books.ctl errors=500
+
+SQL> spool off
