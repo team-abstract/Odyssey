@@ -1,30 +1,37 @@
 CREATE TABLE users {
-    id char(240) primary key,
-    userRole char(240)
+    id int primary key,
+    firstName char(100),
+    lastName char(100),
+    phoneNum int,
+    email char(100),
+    userRole char(11)
 };
 
 CREATE TABLE librarians {
-    
-}
+    librarianID int primary key,
+    userID int FOREIGN KEY REFERENCES users(id),
+    accessLevel char(10)
+};
 
 CREATE TABLE cardOwners {
-    id char(240) primary key,
-    phoneNum number,
+    cardOwnerID int primary key,
+    userID int FOREIGN KEY REFERENCES users(id),
     checkedBooks varray(5),
-    outstandingFees number,
-    ownerStatus char
+    itemOnHoldID int FOREIGN KEY REFERENCES items(bibnum),
+    outstandingFees int,
+    isSuspended boolean
 };
 
 CREATE TABLE items {
-    bibnum char(240) primary key,
+    bibnum char(100) primary key,
     title char(240),
     author char(240),
     isbn char(240),
-    publicationYear number,
+    publicationYear int,
     publisher char(240),
     itemType varchar(6),
     genre char(240),
     itemLocation char(240),
-    numCount number,
+    numCount int,
     itemStatus char
 };
