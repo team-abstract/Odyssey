@@ -10,7 +10,7 @@ CREATE TABLE users (
 CREATE TABLE librarians (
     librarianID int primary key,
     userID int REFERENCES users(id),
-    accessLevel char(10)
+    accessLevel char(13)
 );
 
 CREATE TABLE items (
