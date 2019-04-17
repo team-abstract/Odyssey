@@ -1,3 +1,4 @@
+bibnum,title,author,isbn,publicationYear,publisher,itemType,genre,itemLocation,numCount,itemStatus
 1988429,"Net shore-drift in Washington State. Vol. 5, Northern bays and straits region.",,,1991,"Shorelands and Environmental Assistance Program, Washington Dept. of Ecology,",arbk,caref,cen,1,A
 2935880,If I built a house / Chris Van Dusen.,"Van Dusen, Chris","0803737513, 9780803737518",2012,"Dial Books for Young Readers,",jcbk,ncpic,cap,1,A
 3304258,Mechanical failure / Joe Zieja.,"Zieja, Joseph","1481459260, 1481459279, 9781481459266, 9781481459273",2016,"Saga Press,",acbk,nanew,wts,1,A
@@ -3057,7 +3058,7 @@
 2465643,"The collected poems of Robert Creeley, 1975-2005.","Creeley, Robert, 1926-2005","0520241592, 9780520241596",2006,"University of California Press,",acbk,canf,cen,1,A
 2717722,The American heiress : a novel / Daisy Goodwin.,"Goodwin, Daisy","0312658656, 9780312658656",2011,"St. Martin's Press,",acbk,nafic,uni,1,A
 1674437,Directing for the stage : a workshop guide of 42 creative training exercises and projects / Terry John Converse.,"Converse, Terry John, 1945-",1566080142,1995,"Meriwether Pub.,",acbk,canf,cen,1,A
-1754466,K`uai huo mi fang / Ni K`uang chu.,"Ni, Kuang",9573302403,7.71989E+11,"Huang kuan ch`u pan she,",acbk,caln,cen,1,A
+1754466,K`uai huo mi fang / Ni K`uang chu.,"Ni, Kuang",9573302403,7.72E+11,"Huang kuan ch`u pan she,",acbk,caln,cen,1,A
 2624454,"The future of fantasy art / general editors, Aly Fell and Duddlebug ; foreword by William Stout.",,"006180990X, 9780061809903",2009,"Collins Design,",acbk,canf,cen,1,A
 3219888,"London city guide / [author, Emma Levine].","Levine, Emma, 1969-","1780056958, 9781780056951",2016,"APA Publications,",acbk,nanf,dlr,1,A
 2690101,The pale king : an unfinished novel / David Foster Wallace.,"Wallace, David Foster","0316074233, 9780316074230",2011,"Little, Brown and Co.,",acbk,nafic,bea,1,A
@@ -6429,7 +6430,7 @@
 2704545,El ABC del inglés : método básico para aprender inglés sin maestro / Jesse Ituarte.,"Ituarte, Jesse","9706661506, 9789706661500",2004,"Groupo Editorial Tomo,",acbk,naln,lcy,1,A
 2633877,Ollie's Easter eggs / written and illustrated by Olivier Dunrea.,"Dunrea, Olivier","0618532439, 9780618532438",2009,"Houghton Mifflin Books for Children,",jcbk,nchol,dth,1,A
 3278053,50 inventions that shaped the modern economy / Tim Harford.,"Harford, Tim, 1973-","0735216134, 9780735216136",2017,"Riverhead Books,",acbk,canf,cen,1,A
-510978,"Années de pèlerinage, 2me année = Italie : suite for the piano / Franz Liszt ; edited and revised by Rafael Joseffy.","Liszt, Franz, 1811-1886",,1.9802E+11,"G. Schirmer ; H. Leonard Pub. Corp.,",acmus,camus,cen,1,A
+510978,"Années de pèlerinage, 2me année = Italie : suite for the piano / Franz Liszt ; edited and revised by Rafael Joseffy.","Liszt, Franz, 1811-1886",,1.98E+11,"G. Schirmer ; H. Leonard Pub. Corp.,",acmus,camus,cen,1,A
 3032305,"Nighttime animals / [U.S. senior editor, Shannon Beatty].",,"1465428526, 1465428534, 9781465428523, 9781465428530",2015,"DK Publishing,",jcbk,ncenf,bea,1,A
 3178346,Power couple : a novel / Allison Hobbs.,"Hobbs, Allison","1593096747, 9781593096748",2016,"Strebor Books,",acbk,cafic,cen,2,A
 289031,"The Irish in America; immigration, land, probate, administrations, birth, marriage, and burial records of the Irish in America in and about the eighteenth century.","O'Brien, Michael Joseph, 1870-1960",,1965,"Genealogical Pub. Co.,",arbk,caref,cen,1,A
@@ -9572,7 +9573,7 @@
 3175698,Vancouver & Canadian Rockies road trip / Carolyn B. Heller.,"Heller, Carolyn B.","1631213350, 9781631213359",2016,"Avalon Travel,",acbk,nanf,qna,1,A
 3111280,Lady Bird and Lyndon : the hidden story of a marriage that made a president / Betty Boyd Caroli.,"Caroli, Betty Boyd","1439191220, 1439191239, 9781439191224, 9781439191231",2015,"Simon & Schuster,",acbk,nab,net,1,A
 3244351,Rad families : a celebration / edited by Tomas Moniz ; [foreword by Ariel Gore].,,"1552669157, 1629632309, 9781552669150, 9781629632308",2016,"PM Press,",acbk,canf,cen,1,A
-3193682,Fourth string quartet / Béla Bartók.,"Bartók, Béla, 1881-1945",,1.9902E+11,"Boosey & Hawkes,",acmus,camus,cen,1,A
+3193682,Fourth string quartet / Béla Bartók.,"Bartók, Béla, 1881-1945",,1.99E+11,"Boosey & Hawkes,",acmus,camus,cen,1,A
 1972831,Jefferson and the gun-men : how the West was almost lost / M.R. Montgomery ; illustrations by Gerald Foster.,"Montgomery, M. R.",517702126,2000,"Crown Publishers,",acbk,canf,cen,1,A
 1840863,Hirohito and war : imperial tradition and military decision making in prewar Japan / Peter Wetzler.,"Wetzler, Peter",082481925X,1998,"University of Hawai'i Press,",acbk,canf,cen,1,A
 2882329,"Nothing in common / Tri-Star Pictures, Inc. ; a Rastar production ; writers, Rick Podell, Michael Preminger ; producer, Alexandra Rose ; director, Garry Marshall.",,"0767881346, 9780767881340",2002,"Columbia TriStar Home Entertainment ; distributed by Image Entertainment,",acdvd,cadvd,cen,2,A
