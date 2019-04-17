@@ -1,9 +1,9 @@
 CREATE TABLE users (
     id int primary key,
-    firstName char(100),
-    lastName char(100),
+    firstName char(20),
+    lastName char(20),
     phoneNum int,
-    email char(100),
+    email char(30),
     userRole char(11)
 );
 
