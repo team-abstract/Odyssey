@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'librarias.csv'
+INFILE 'librarians.csv'
 INTO TABLE librarians
 FIELDS TERMINATED BY "," OPTIONALLY ENCLOSED BY '"'
-(librarianid, userid, accesslevel)
+(librarianID, userID, accessLevel)

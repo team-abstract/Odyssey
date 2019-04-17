@@ -3,5 +3,5 @@ INFILE 'cardOwners.csv'
 INSERT
 INTO TABLE cardOwners
 FIELDS TERMINATED BY "," OPTIONALLY ENCLOSED BY '"'
-(cardownerid, userid, checkedbooks, itemonholdsid, outstandingfees, issuspended)
+(cardOwnerID, userID, checkedBooks, itemOnHoldID, outstandingFees, isSuspended)
 
