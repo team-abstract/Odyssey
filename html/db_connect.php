@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $servername = "localhost";
 $username = "insert_username_here";
 $password = "insert_passwd_here";
