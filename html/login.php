@@ -28,18 +28,28 @@ $stmt->bindValue(':username', $username);
 $stmt->execute();
     
 //Fetch the table row.
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
+$userRow = $stmt->fetch(PDO::FETCH_ASSOC);
  
 //If we retrieved a relevant record.
-if($user !== false){
+if ($userRow !== false){
     //Compare the password attempt with the password we have stored.
-    $validPassword = password_verify($password, $user['password']);
-    if($validPassword){
+    $validPassword = password_verify($password, $userRow['password']);
+    if ($validPassword){
         //All is good. Log the user in.
         echo "Password was correct!";
+        $_SESSION['user'] = $userRow['username'];
+        $_SESSION['success'] = "You are now logged in";
+        $_SESSION['user_role'] = $userRow['user_role'];
+        if ($userRow['user_role'] === 'librarian') {
+            header('location: librarian.php');
+        } else {
+            header('location: cardowner.php');
+        }
+    } else {
+        echo "Bad username / password; try again";
     }
 } else {
-    echo "Password was BAD";
+    echo "Bad username / password; try again";
 }  
 
 ?>
