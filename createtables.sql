@@ -30,8 +30,12 @@ CREATE TABLE items (
 CREATE TABLE cardOwners (
     cardOwnerID int primary key,
     userID int REFERENCES users(id),
-    checkedBooks varchar(100),
     itemOnHoldID int REFERENCES items(bibnum),
     outstandingFees int,
     isSuspended char
+);
+
+CREATE TABLE checkedBooks (
+    cardOwnerID int primary key,
+    bibnum int
 );
