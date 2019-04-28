@@ -36,6 +36,7 @@ CREATE TABLE cardOwners (
 );
 
 CREATE TABLE checkedBooks (
-    cardOwnerID int primary key,
-    bibnum int
+    cardOwnerID int,
+    bibnum int,
+    PRIMARY KEY (cardOwnerID, bibnum)
 );
