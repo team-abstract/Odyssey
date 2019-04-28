@@ -1,5 +1,7 @@
 <?php
 
+include('auth.php');
+
 require("db_connect.php");
 
 $search = $_POST['search'];
