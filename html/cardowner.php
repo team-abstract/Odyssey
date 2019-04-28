@@ -23,10 +23,12 @@ include('auth.php');
                     </form>
                 </div>
         </div>
-        <h1><center>Welcome!</center></h1>
+        <br><br><br><br>
+        <br><br><br><br>
+        <h1><center> <img src="./odyssey_logo.png" style="height:100px;"> </center></h1>
         <div class="search-bar">
             <form action="/search.php" method="post">
-                <input type="text" placeholder="Search" name="search">
+                <input type="text" placeholder="Search for a title" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
