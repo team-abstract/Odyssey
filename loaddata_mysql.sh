@@ -9,3 +9,5 @@ mysqlimport -u abstract -p$passw --local --ignore-lines=1 --fields-terminated-by
 mysqlimport -u abstract -p$passw --local --ignore-lines=1 --fields-terminated-by=, odyssey items.csv
 
 mysqlimport -u abstract -p$passw --local --ignore-lines=1 --fields-terminated-by=, odyssey cardOwners.csv
+
+mysqlimport -u abstract -p$passw --local --ignore-lines=1 --fields-terminated-by=, odyssey checkedBooks.csv
