@@ -4,7 +4,9 @@ CREATE TABLE users (
     lastName char(20),
     phoneNum int,
     email char(30),
-    userRole char(11)
+    userRole char(11),
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE librarians (
