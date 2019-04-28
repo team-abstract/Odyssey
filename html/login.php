@@ -4,8 +4,12 @@
 session_start();
 
 // redirect if already logged in
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: odyssey.php");
+if (isset($_SESSION["user"])) {
+    if ($userRow['user_role'] === 'librarian') {
+        header('location: librarian.php');
+    } else {
+        header('location: cardowner.php');
+    }
     exit;
 }
 
