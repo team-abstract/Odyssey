@@ -7,6 +7,18 @@ include('auth.php');
     <title>Odyssey Library Homepage</title>
     <link rel="stylesheet" type="text/css" href="tmpstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function showadv() {
+            // toggle visibility of advanced search elements
+            if (document.getElementById("advoptions").style.visibility == "visible") {
+                console.log("[+] hiding options");
+                document.getElementById("advoptions").style.visibility = "hidden";
+            } else {
+                console.log("[+] making visible");
+                document.getElementById("advoptions").style.visibility = "visible";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -30,6 +42,16 @@ include('auth.php');
             <form action="/search.php" method="post">
                 <input type="text" placeholder="Search for a title" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
+            <button onclick="showadv();" type="button">Advanced Search</button>
+            <br>
+            <div id="advoptions">
+		    <input type="text" placeholder="Author" name="author">
+		    <input type="text" placeholder="ISBN" name="isbn">
+		    <input type="text" placeholder="Publication Year" name="pubyear">
+		    <input type="text" placeholder="Publisher" name="publisher">
+		    <input type="text" placeholder="Item Type" name="itemtype">
+		    <input type="text" placeholder="Genre" name="genre">
+            </div>
             </form>
         </div>
         </body>
