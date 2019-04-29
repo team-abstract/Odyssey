@@ -96,6 +96,10 @@ p {
   background-color: #2196F3;
 }
 
+#advoptions {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 600px) {
   .topnav .login-container {
     float: none;
