@@ -5,7 +5,7 @@ session_start();
 
 // redirect if already logged in
 if (isset($_SESSION["user"])) {
-    if ($userRow['userRole'] === 'Librarian') {
+    if ($_SESSION['user_role'] === 'Librarian') {
         header('location: librarian.php');
     } else {
         header('location: cardowner.php');
