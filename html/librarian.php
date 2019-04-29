@@ -36,6 +36,12 @@ include('auth.php');
                 </div>
         </div>
         <br><br><br><br>
+
+	<h1><center>Hello 
+	<?php $name = $_SESSION['user'];
+	echo $name;
+	?>
+	!</center></h1>
         <br><br><br><br>
         <h1><center> <img src="./odyssey_logo.png" style="height:100px;"> </center></h1>
         <div class="search-bar">
@@ -55,7 +61,15 @@ include('auth.php');
             </form>
             <br>
             <br>
-            <h1>Hello Librarian!!
+        </div>
+
+        <div class="find-cardowner">
+            <form action="/getcardowner.php" method="post">
+                <input type="text" placeholder="First Name" name="fname">
+                <input type="text" placeholder="Last Name" name="lname">
+                <input type="text" placeholder="Phone number (Optional)" name="phone">
+                <button type="submit">Find Card Owner</button>
+            </form>
         </div>
         </body>
     </div>
