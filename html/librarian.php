@@ -53,6 +53,9 @@ include('auth.php');
 		    <input type="text" placeholder="Genre" name="genre">
             </div>
             </form>
+            <br>
+            <br>
+            
         </div>
         </body>
     </div>

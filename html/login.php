@@ -5,7 +5,7 @@ session_start();
 
 // redirect if already logged in
 if (isset($_SESSION["user"])) {
-    if ($userRow['user_role'] === 'librarian') {
+    if ($userRow['userRole'] === 'Librarian') {
         header('location: librarian.php');
     } else {
         header('location: cardowner.php');
@@ -20,7 +20,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
  
 //Retrieve the table row for the given username.
-$sql = "SELECT id, username, password FROM users WHERE username = :username";
+$sql = "SELECT id, username, password, userRole FROM users WHERE username = :username";
 
 //Prepare your statement.
 $stmt = $pdo->prepare($sql);
@@ -43,8 +43,8 @@ if ($userRow !== false){
         echo "Password was correct!";
         $_SESSION['user'] = $userRow['username'];
         $_SESSION['success'] = "You are now logged in";
-        $_SESSION['user_role'] = $userRow['user_role'];
-        if ($userRow['user_role'] === 'librarian') {
+        $_SESSION['user_role'] = $userRow['userRole'];
+        if ($userRow['userRole'] === 'Librarian') {
             header('location: librarian.php');
         } else {
             header('location: cardowner.php');
