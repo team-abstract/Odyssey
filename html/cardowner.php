@@ -86,6 +86,8 @@ require('db_connect.php');
             </form>
         </div>
 
+	<br><br>
+		
         <?php
 	    echo "<div id=\"userinfo\" class=\"success\">" . $_SESSION['user'] . "<br>" . "</div>";
 
