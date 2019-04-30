@@ -15,6 +15,15 @@ if (isset($_SESSION["user"])) {
     <title>Odyssey Library Homepage</title>
     <link rel="stylesheet" type="text/css" href="tmpstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url("windows_xp_bliss.jpg");
+        }
+
+        .find-cardowner {
+            text-align: center;
+        }
+    </style>
     <script>
         function showadv() {
             // toggle visibility of advanced search elements
@@ -37,6 +46,8 @@ if (isset($_SESSION["user"])) {
         <body>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
+            <a > Librarian </a>
+            <a> <?php echo $_SESSION['user'] ?> </a>
             <div class="login-container">
                     <form action="cardowner.php" method="get">
                         <button type="submit" name="logout" value="1">Log Out</button>
@@ -45,11 +56,7 @@ if (isset($_SESSION["user"])) {
         </div>
         <br><br><br><br>
 
-	<h1><center>Hello 
-	<?php $name = $_SESSION['user'];
-	echo $name;
-	?>
-	!</center></h1>
+	<!-- <h1><center>Welcome, <?php $name = $_SESSION['firstName']; echo $name;?>!</center></h1> -->
         <br><br><br><br>
         <h1><center> <img src="./odyssey_logo.png" style="height:100px;"> </center></h1>
         <div class="search-bar">
