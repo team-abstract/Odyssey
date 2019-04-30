@@ -1,5 +1,13 @@
 <?php 
 include('auth.php');
+
+// redirect if NOT a librarian
+if (isset($_SESSION["user"])) {
+    if ($_SESSION['user_role'] !== 'Librarian') {
+        header('location: cardowner.php');
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html>
